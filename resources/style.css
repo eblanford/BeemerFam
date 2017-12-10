@@ -1,0 +1,104 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Economica');
+
+body {
+  background-color: black;
+  font-family: 'Economica', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+}
+
+div {
+  /*Delete*/
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.header {
+  /*Delete*/
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.header .nav {
+
+}
+
+.main{
+  margin: 100px auto auto auto;
+  height: 300px;
+  z-index: 5;
+  /*
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  */
+}
+
+.container {
+  height: auto;
+}
+
+.gallery {
+  display: block;
+  margin: 50px auto;
+  width: 80%;
+  height: 300px;
+  /*height: auto;*/
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+}
+
+.content {
+  max-width: 50%;
+  text-align: center;
+}
+
+.content p {
+  text-align: right;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: 40%;
+}
+
+.merch {
+  height: 30%
+}
+
+.video {
+  height: 30%
+}
+
+.ad {
+  margin: 50px auto;
+  width: 90%;
+  height: 100px;
+}
+
+.footer {
+  height: 100px;
+  text-align: center;
+}
