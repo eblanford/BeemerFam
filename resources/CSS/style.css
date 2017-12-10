@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Economica');
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: 'Economica', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: white;
+  color: black;
   margin: 0px;
 }
 
 div {
   /*Delete*/
   padding: 10px;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .header {
@@ -38,10 +38,6 @@ div {
   max-height: 100%;
 }
 
-.header .nav {
-
-}
-
 .main{
   margin: 0 auto auto auto;
   height: 600px;
@@ -57,11 +53,17 @@ div {
 }
 
 .gallery {
+  border: none;
   display: block;
   margin: 50px auto;
-  width: 80%;
-  height: 300px;
+  width: 60%;
+  height: auto;
   /*height: auto;*/
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 #about {
@@ -105,5 +107,7 @@ div {
 
 .footer {
   height: 100px;
+  color: white;
+  background-color: black;
   text-align: center;
 }

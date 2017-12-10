@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Made with Thimble</title>
+    <title>BeemerFam</title>
     <link rel="stylesheet" type="text/css" href="./resources/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/CSS/style.css">
   </head>
@@ -30,8 +30,30 @@
 
       <!--Images-->
       <div class="gallery">
-        <img />
+        <img class="mySlides" src="./resources/images/img2.jpg" />
+        <img class="mySlides" src="./resources/images/img7.jpg" />
+        <img class="mySlides" src="./resources/images/img3.jpg" />
+        <img class="mySlides" src="./resources/images/img5.jpg" />
+        <img class="mySlides" src="./resources/images/img4.jpg" />
       </div>
+
+      <!--Slideshow Images Javascript-->
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+      </script>
 
       <!--About, Merch, Video-->
       <div id="about">
