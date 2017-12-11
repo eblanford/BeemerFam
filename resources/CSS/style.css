@@ -10,12 +10,6 @@ body {
   margin: 0px;
 }
 
-div {
-  /*Delete*/
-  padding: 10px;
-  border: 2px solid black;
-}
-
 .header {
   margin: 0;
   padding: 0;
@@ -31,18 +25,41 @@ div {
 
 }
 
+.header .nav,
+.header .blank,
+.header .logo {
+  width: 30%;
+}
+
+.header .nav {
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .logo img {
   display: block;
-  width: auto;
   margin: auto;
   max-height: 100%;
 }
 
+.fa {
+  margin: auto 7px;
+  border-radius: .2em;
+  border: 1px solid white;
+  text-align: center;
+  width: 30px;
+  padding: 2px;
+  color: white;
+  font-size: 30px;
+}
+
 .main{
   margin: 0 auto auto auto;
-  height: 600px;
+  height: 900px;
   z-index: 5;
-  background-image: url(../images/img1.jpg);
+  background-image: url(../images/img6.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,6 +81,11 @@ div {
 .gallery img {
   width: 100%;
   height: auto;
+}
+
+#about div {
+  padding: 10px;
+  border: 2px solid black;
 }
 
 #about {
@@ -105,9 +127,29 @@ div {
   height: 100px;
 }
 
+.footer h1 {
+  padding-top: 20px;
+}
+
+.footer div,
+.footer p {
+  margin: 10px;
+  padding: 10px 10px 0px 10px;
+}
+
 .footer {
-  height: 100px;
+  height: 150px;
   color: white;
   background-color: black;
   text-align: center;
+}
+
+.header .fa:hover {
+  background-color: white;
+  color: rgba(0,0,0,0.6);
+}
+
+.footer .fa:hover {
+  background-color: white;
+  color: black;
 }
