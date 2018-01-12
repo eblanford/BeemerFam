@@ -59,7 +59,7 @@ body {
   margin: 0 auto auto auto;
   height: 900px;
   z-index: 5;
-  background-image: url(../images/img6.jpg);
+  background-image: url(../images/img1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -93,7 +93,7 @@ body {
   justify-content: center;
   margin: auto;
   width: 80%;
-  height: 400px;
+  height: auto;
 }
 
 .content {
@@ -109,16 +109,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: auto;
+  height: 100%;
   width: 40%;
 }
 
-.merch {
-  height: 30%
+.merch img {
+  width: 100%;
+  height: auto;
 }
 
 .video {
-  height: 30%
+  height: 200px;
 }
 
 .ad {
