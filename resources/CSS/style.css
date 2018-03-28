@@ -55,6 +55,21 @@ body {
   font-size: 30px;
 }
 
+.blank {
+  color: white;
+  font-size: 23px;
+  font-weight: lighter;
+  padding: 2px;
+  margin: auto 20px;
+}
+
+.blank a {
+  margin: auto 5px;
+  padding: auto 5px;
+  color: white;
+  text-decoration: none;
+}
+
 .main {
   margin: 0 auto auto auto;
   height: 900px;
@@ -106,6 +121,9 @@ body {
   background: rgba(0,0,0,0.5);
   height: auto;
   text-align: center;
+  padding-top:70px;
+  padding-bottom:70px;
+  margin-bottom: 50px;
 }
 
 #about h1 {
@@ -132,13 +150,13 @@ body {
   text-align: right;
 }
 
-.merch {
+.bio {
   display:flex;
   justify-content: space-between;
   width: 80%;
-  height: 250px;
+  height: 125px;
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   margin: auto;
 }
 
@@ -146,19 +164,58 @@ body {
   position: relative;
   text-align: center;
   color: white;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-  border-radius: 2rem;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 1rem;
   display: block;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 125px;
+  max-height: 125px;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
 }
 
 .button img {
-  border-radius: 2rem;
+  border-radius: 1rem;
+  display: block;
+  max-width: 125px;
+  max-height: 125px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  border: 1px solid grey;
+  opacity: 1;
+}
+
+.button .text {
+  font-size: 25px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.merch {
+  display:flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 250px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: auto;
+}
+
+.button2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  border-radius: 1rem;
   display: block;
   max-width: 200px;
   max-height: 200px;
@@ -167,7 +224,17 @@ body {
   margin-right: auto;
 }
 
-.button:hover {
+.button2 img {
+  border-radius: 1rem;
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button2:hover {
   border: 1px solid grey;
   opacity: 1;
 }
@@ -247,9 +314,23 @@ body {
  .container .container1, .gallery img {
    height: 500px;
  }
+
+ .bio {
+   height: auto;
+   flex-wrap: wrap;
+ }
+
+ .bio .button {
+   padding: 10px;
+ }
 }
 
 @media only screen and (max-width: 400px) {
+  #about {
+    padding: 20px auto;
+    margin: 20px auto;
+  }
+
   .logo img {
     width: 100%;
     height: auto;
@@ -272,6 +353,11 @@ body {
   }
 
   .button, .button img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .button2, .button2 img {
     height: 150px;
     width: 150px;
   }
