@@ -55,7 +55,7 @@ body {
   font-size: 30px;
 }
 
-.main{
+.main {
   margin: 0 auto auto auto;
   height: 900px;
   z-index: 5;
@@ -74,7 +74,7 @@ body {
 }
 
 .container .container1 {
-  max-height: 700px;
+  height: 700px;
   padding: 50px auto;
 }
 
@@ -104,18 +104,18 @@ body {
   margin: auto;
   margin-top:50px;
   background: rgba(0,0,0,0.5);
-  height: 200px;
+  height: auto;
   text-align: center;
 }
 
-#about h1{
+#about h1 {
   font-family: 'Economica', sans-serif;
   padding-top: 3%;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-#about p{
+#about p {
   text-align: justify;
   line-height: 1.4rem;
   /* letter-spacing: .25rem; */
@@ -131,23 +131,6 @@ body {
 .content p {
   text-align: right;
 }
-
-/* .merch {
-  max-height: 200px;
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin: auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
-} */
-
-/* .merch img {
-  background: rgba(0,0,0,0.5);
-  max-width: 200px;
-  height: 200px;
-  object-fit: cover;
-} */
 
 .merch {
   display:flex;
@@ -168,17 +151,17 @@ body {
   border-radius: 2rem;
   display: block;
   max-width: 200px;
-  height: 200px;
+  max-height: 200px;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
 }
 
-.button img{
+.button img {
   border-radius: 2rem;
   display: block;
   max-width: 200px;
-  height: 200px;
+  max-height: 200px;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -189,7 +172,7 @@ body {
   opacity: 1;
 }
 
- .text {
+.text {
   color: white;
   font-size: 40px;
   position: absolute;
@@ -225,4 +208,83 @@ body {
 .footer .fa:hover {
   background-color: white;
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+ .header {
+   flex-direction: column;
+   justify-content: center;
+   height: auto;
+ }
+
+ .header .blank {
+   display: none;
+ }
+ .header .nav {
+   width: auto;
+   margin: auto;
+   margin-bottom: 10px;
+   padding-right: 0px;
+ }
+
+ .header .fa {
+   padding: 3px;
+ }
+
+ .logo img {
+   width: 100%;
+   height: auto;
+ }
+
+ .logo {
+   margin: auto;
+ }
+
+ .main {
+   height: 500px;
+ }
+
+ .container .container1, .gallery img {
+   height: 300px;
+ }
+}
+
+@media screen and (max-width: 305px) {
+  .fa {
+    margin: auto;
+    border-radius: .2em;
+    border: 1px solid white;
+    text-align: center;
+    width: 25px;
+    padding: 2px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .header .fa {
+    margin: auto 2px;
+    padding: 2px;
+  }
+
+  .button, .button img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .merch {
+    height: 150px;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  #about h1 {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+
 }
