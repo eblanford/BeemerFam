@@ -26,69 +26,67 @@
     </div>
 
   <!--Body Content-->
+    <!--Opening Image-->
     <div class="main">
     </div>
 
-      <!--Opening Image-->
-      <div class="container">
+    <div class="container">
 
-      <!--Images-->
-      <div class="gallery">
-        <img class="mySlides" src="./resources/images/img2.jpg" />
-        <img class="mySlides" src="./resources/images/img7.jpg" />
-        <img class="mySlides" src="./resources/images/img3.jpg" />
-        <img class="mySlides" src="./resources/images/img5.jpg" />
-        <img class="mySlides" src="./resources/images/img4.jpg" />
-      </div>
+      <!--Gallery Content-->
+      <div class="container1">
 
-      <!--Slideshow Images Javascript-->
-      <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}
-          x[myIndex-1].style.display = "block";
-          setTimeout(carousel, 5000); // Change image every 5 seconds
-      }
-      </script>
-
-      <!--About, Merch, Video-->
-      <!--<div id="about">
-        <div class="media">
-          <div class="merch">
-            <img src="./resources/images/img6.jpg" />
-          </div>
-          <div class="video">
-          </div>
+        <!--Images-->
+        <div class="gallery">
+          <img class="mySlides" src="./resources/images/new3.jpg" />
+          <img class="mySlides" src="./resources/images/new1.jpg" />
+          <img class="mySlides" src="./resources/images/img7.jpg" />
+          <img class="mySlides" src="./resources/images/new9.jpg" />
+          <img class="mySlides" src="./resources/images/new8.jpg" />
         </div>
-        <div class="content">
+
+        <!--Slideshow Images Javascript-->
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+        </script>
+
+    </div>
+
+      <div class="container2">
+        <div id="about">
           <h1>About Us</h1>
-          <p>Content content content content content content content content content content content content content Content content content content content content content content content content content content content content content content content content
-        </p>
+          <p>We started out as a simple family who simply loves BMWs. We took that BMW love to continue living
+          the lifestyle by hosting events and creating video content. Now, we are taking our car centered
+        passion to help create car events and meets that promote positivity in the car community.</p>
         </div>
-      </div>-->
 
-      <div id="about">
-        <h1>About Us</h1>
-        <p>We started out as a simple family who simply loves BMWs. We took that BMW love to continue living
-        the lifestyle by hosting events and creating video content. Now, we are taking our car centered
-      passion to help create car events and meets that promote positivity in the car community.</p>
-      </div>
+        <div class="merch">
+          <div class="button">
+            <a href = "https://beemer-fam.myshopify.com"><img class="image" src="./resources/images/merch.jpg">
+            <div class="overlay">
+              <div class="text">Merch</div>
+            </div></a>
+          </div>
+          <!--<div class="button">
+            <a href = "https://www.google.com/"><img class="image" src="./resources/images/merch.jpg">
+            <div class="overlay">
+              <div class="text">Merch</div>
+            </div></a>
+          </div>-->
+        </div>
 
-
-
-      <!--Advertisement or Upcoming Event -->
-      <div class="merch">
-        <img>
-        <img>
-        <img>
       </div>
     </div>
 

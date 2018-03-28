@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Economica|Raleway|Open+Sans:300,600');
 
 body {
-  background-color: rgb(82,82,81);
+  /*background-color: rgb(82,82,81);*/
+  background-color: #000002;
   font-family: 'Economica', sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -66,40 +67,53 @@ body {
 
 .container {
   height: auto;
+  background-image: url(../images/A2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container .container1 {
+  max-height: 700px;
+  padding: 50px auto;
+  background-image: url(../images/new3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container .container2 {
+  padding-top: 50px;
 }
 
 .gallery {
-  padding-top: 5%;
   padding-bottom: 5%;
   border: none;
   display: block;
-  margin: 50px auto;
-  width: 60%;
-  height: auto;
-  /*height: auto;*/
-}
-
-.gallery img {
-  border: 2px solid white;
-  border-radius: .4em;
+  margin: 0px auto;
   width: 100%;
   height: auto;
 }
 
+.gallery img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
 #about {
-  font-family:'Open Sans', sans-serif;
-  border-radius: .4em;
-  border: 2px solid white;
+  font-family: 'Economica', sans-serif;
   color: white;
   width: 70%;
   margin: auto;
-  background-color: black;
+  margin-top:50px;
+  background: rgba(0,0,0,0.5);
   height: 200px;
   text-align: center;
 }
 
 #about h1{
-  font-family:'Raleway', sans-serif;
+  font-family: 'Economica', sans-serif;
   padding-top: 3%;
   font-size: 1.8rem;
   font-weight: bold;
@@ -113,19 +127,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* #about div {
-  padding: 10px;
-  border: 2px solid black;
-}
-
-#about {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 80%;
-  height: auto;
-} */
-
 .content {
   max-width: 50%;
   text-align: center;
@@ -135,39 +136,73 @@ body {
   text-align: right;
 }
 
-/* .media {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  width: 40%;
-} */
-
-.merch {
-  height: 200px;
+/* .merch {
+  max-height: 200px;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding-top: 70px;
   padding-bottom: 70px;
-}
+} */
 
-.merch img {
-  border: 2px solid white;
-  width: 30%;
-  height: auto;
-}
-
-/* .video {
+/* .merch img {
+  background: rgba(0,0,0,0.5);
+  max-width: 200px;
   height: 200px;
+  object-fit: cover;
 } */
 
-/* .ad {
-  margin: 50px auto;
-  width: 90%;
-  height: 100px;
-} */
+.merch {
+  display:flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 250px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.button {
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  border-radius: 2rem;
+  display: block;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button img{
+  border-radius: 2rem;
+  display: block;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  border: 1px solid grey;
+  opacity: 1;
+}
+
+ .text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .footer h1 {
   padding-top: 20px;
